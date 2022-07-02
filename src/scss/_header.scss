@@ -1,0 +1,19 @@
+.main-header {
+  background-color: var(--light-gray2);
+  padding-block: 1.5rem;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
+    text-transform: capitalize;
+  }
+
+  &>* {
+    align-self: center;
+  }
+}

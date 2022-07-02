@@ -1,0 +1,14 @@
+.main-footer {
+  background-color: var(--dark-gray);
+  color: white;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 2rem;
+  }
+  &__text {
+    text-align: center;
+  }
+}
