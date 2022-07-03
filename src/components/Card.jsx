@@ -78,7 +78,7 @@ export default function Card({ cardIndex }) {
         <Button
           buttonColor='danger'
           onClick={() => handleClickDelete()}
-        >&#215;</Button>
+        ><i class="fa-solid fa-circle-xmark"></i></Button>
         <textarea
           className="card__title"
           ref={textArea}

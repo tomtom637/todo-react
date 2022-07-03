@@ -21,11 +21,10 @@
       height: 1.5rem;
       width: 1.5rem;
       padding: 0;
-      background-color: var(--color-danger1);
-      border-radius: 100%;
       border: none;
-      color: white;
-      font-size: 1.2rem;
+      background-color: transparent;
+      color: var(--color-danger1);
+      font-size: 1.6rem;
     }
   }
   &__title {
