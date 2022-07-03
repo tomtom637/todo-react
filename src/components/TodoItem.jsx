@@ -54,6 +54,7 @@ export default function TodoItem({ cardIndex, todoIndex }) {
       <textarea
         className="todo__task"
         ref={textArea}
+        autoFocus
         onFocus={e => handleTextAreaSize(e)}
         onKeyDown={e => handleTextAreaSize(e)}
         onBlur={e => handleTextAreaSize(e)}

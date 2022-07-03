@@ -82,6 +82,7 @@ export default function Card({ cardIndex }) {
         <textarea
           className="card__title"
           ref={textArea}
+          autoFocus
           onFocus={e => handleTextAreaSize(e)}
           onKeyDown={e => handleTextAreaSize(e)}
           onBlur={e => handleTextAreaSize(e)}
