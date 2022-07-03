@@ -41,7 +41,7 @@ function App() {
           <div className="container main-header__content">
             <h1 className='main-header__title'>to-dooz</h1>
             <Button
-              buttonColor='primary'
+              buttonColor='dark'
               onClick={() => addList()}
             >
               <i className="fa fa-solid fa-circle-plus"></i> New List
@@ -50,7 +50,7 @@ function App() {
         </header>
         <main className='main-content'>
           <div className="container">
-            <CardsList />
+            {todos.length > 0 ? <CardsList /> : <p className='main-content__empty-message'>No lists yet. Create one!</p>}
           </div>
         </main>
       </div>

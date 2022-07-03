@@ -13,7 +13,8 @@ html, body {
   --radius: 0.35rem;
   --light-gray1: hsl(0, 0%, 94%);
   --light-gray2: hsl(0, 0%, 88%);
-  --dark-gray: #333;
+  --dark-gray1: #333;
+  --dark-gray2: #444;
   --color-primary1: hsl(177, 43%, 41%);
   --color-primary2: hsl(177, 43%, 35%);
   --color-danger1: hsl(343, 43%, 51%);
@@ -29,7 +30,7 @@ textarea, input {
 }
 
 textarea:focus, input:focus, button:focus {
-  outline: 2px solid var(--dark-gray);
+  outline: 2px solid var(--dark-gray1);
 }
 
 input[type='checkbox'] {

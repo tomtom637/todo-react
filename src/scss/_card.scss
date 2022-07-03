@@ -1,10 +1,7 @@
 .cards-list {
-  margin-block: 2rem;
   display: grid;
   gap: 1.5rem;
   grid-template-columns: repeat(auto-fit, minmax(16.5rem, 1fr));
-  justify-items: center;
-  justify-content: start;
 }
 
 .card {
@@ -12,7 +9,7 @@
   background-color: var(--light-gray1);
   border-radius: var(--radius);
   padding: 0.5rem 1rem;
-  width: 268px;
+  width: min(100%, 25rem);
   &__header {
     & .button {
       position: absolute;
@@ -57,5 +54,11 @@
     & i {
       font-size: 1.5rem;
     }
+  }
+}
+
+@media screen and (max-width: 584px) {
+  .card {
+    width: 100%;
   }
 }
