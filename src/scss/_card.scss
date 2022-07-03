@@ -1,0 +1,61 @@
+.cards-list {
+  margin-block: 2rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(16.5rem, 1fr));
+  justify-items: center;
+  justify-content: start;
+}
+
+.card {
+  position: relative;
+  background-color: var(--light-gray1);
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+  width: 268px;
+  &__header {
+    & .button {
+      position: absolute;
+      top: -1rem;
+      right: -1rem;
+      padding: 0 0.5rem;
+      background-color: transparent;
+      border: none;
+      color: var(--color-danger1);
+      font-size: 2rem;
+    }
+  }
+  &__title {
+    background-color: white;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.9rem 0.2rem 0.1rem;
+    resize: none;
+    width: 100%;
+  }
+  &__body {
+    padding-block: 1rem;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+    text-align: center;
+  }
+  &__add {
+    position: absolute;
+    bottom: -0.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-primary1);
+    border: none;
+    cursor: pointer;
+
+    & i {
+      font-size: 1.5rem;
+    }
+  }
+}

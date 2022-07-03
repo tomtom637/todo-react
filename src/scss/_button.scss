@@ -27,4 +27,12 @@
       background-color: var(--color-primary2);
     }
   }
+  &--danger {
+    background-color: var(--color-danger1);
+    color: #fff;
+
+    &:hover {
+      background-color: var(--color-danger2);
+    }
+  }
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 export default function Button({ children, onClick, ...props }) {
   const resolveButtonColor = () => {
@@ -13,10 +13,11 @@ export default function Button({ children, onClick, ...props }) {
         return 'button button--danger';
       default:
         return 'button';
-  }
-}
+    }
+  };
   return (
     <button
+      ref={props.okayRef ? props.okayRef : null}
       className={resolveButtonColor()}
       onClick={onClick}
     >

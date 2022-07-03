@@ -11,14 +11,27 @@ html, body {
 
 :root {
   --radius: 0.35rem;
-  --light-gray1: #efefef;
-  --light-gray2: #dedede;
-
+  --light-gray1: hsl(0, 0%, 94%);
+  --light-gray2: hsl(0, 0%, 88%);
   --dark-gray: #333;
-  --color-primary1: #b84e6c;
-  --color-primary2: hsl(343, 43%, 45%);
+  --color-primary1: hsl(177, 43%, 41%);
+  --color-primary2: hsl(177, 43%, 35%);
+  --color-danger1: hsl(343, 43%, 51%);
+  --color-danger2: hsl(343, 43%, 45%);
 }
 
 i.fa {
   font-size: 1rem;
+}
+
+textarea, input {
+  font-family: inherit;
+}
+
+textarea:focus, input:focus, button:focus {
+  outline: 2px solid var(--dark-gray);
+}
+
+input[type='checkbox'] {
+  accent-color: var(--color-primary1);
 }

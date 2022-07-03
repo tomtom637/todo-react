@@ -1,0 +1,92 @@
+.modal {
+  &__dark-bg {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 20;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min(50%, 350px);
+    min-width: 20rem;
+    min-height: 10rem;
+    max-height: 95vh;
+    background-color: var(--light-gray1);
+    color: white;
+    z-index: 30;
+    border-radius: var(--radius);
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  &__header {
+    background: white;
+    overflow: hidden;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    padding: 0.2rem 1.5rem;
+  }
+  &__heading {
+    padding: 0.5rem;
+    color: var(--dark-gray);
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  &__content {
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: var(--dark-gray);
+    text-align: center;
+    line-height: 1.5;
+    flex-grow: 1;
+  }
+  &__close-btn {
+    background-color: var(--color-danger1);
+    cursor: pointer;
+    padding: 0.2rem 0.8rem;
+    font-weight: 500;
+    border: none;
+    font-size: 1.1rem;
+    color: white;
+    position: absolute;
+    border-top-right-radius: var(--radius);
+    right: 0;
+    top: 0;
+    align-self: flex-end;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: var(--color-danger2);
+    }
+  }
+  &__buttons-container {
+    margin: 0 auto 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 55%;
+  }
+  &__remember {
+    margin-inline: auto;
+    display: flex;
+    gap: 1rem;
+    color: grey;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+  }
+  &__checkbox {
+    border: none;
+    &:focus {
+      outline-offset: 0.1rem;
+    }
+  }
+}
