@@ -86,7 +86,7 @@ export default function Card({ cardIndex }) {
           onFocus={e => handleTextAreaSize(e)}
           onKeyDown={e => handleTextAreaSize(e)}
           onBlur={e => handleTextAreaSize(e)}
-          placeholder='Add a list name'
+          placeholder='List Title'
           value={todos[cardIndex].title}
           onChange={e => setNewTitle(e)}
           rows={1}

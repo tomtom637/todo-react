@@ -58,7 +58,7 @@ export default function TodoItem({ cardIndex, todoIndex }) {
         onFocus={e => handleTextAreaSize(e)}
         onKeyDown={e => handleTextAreaSize(e)}
         onBlur={e => handleTextAreaSize(e)}
-        placeholder='Add a task name'
+        placeholder='...'
         value={currentTodo.task}
         onChange={e => setTask(e)}
         rows={1}

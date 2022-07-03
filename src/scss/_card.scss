@@ -6,26 +6,32 @@
 
 .card {
   position: relative;
-  background-color: var(--light-gray1);
+  background-color: var(--light-gray2);
   border-radius: var(--radius);
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   width: min(100%, 25rem);
   &__header {
     & .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       position: absolute;
-      top: -1rem;
-      right: -1rem;
-      padding: 0 0.5rem;
-      background-color: transparent;
+      top: -0.4rem;
+      right: -0.4rem;
+      height: 1.5rem;
+      width: 1.5rem;
+      padding: 0;
+      background-color: var(--color-danger1);
+      border-radius: 100%;
       border: none;
-      color: var(--color-danger1);
-      font-size: 2rem;
+      color: white;
+      font-size: 1.2rem;
     }
   }
   &__title {
-    background-color: white;
     border: none;
     text-align: center;
+    border-radius: var(--radius);
     font-size: 1rem;
     font-weight: 700;
     padding: 0.9rem 0.2rem 0.1rem;
@@ -43,11 +49,12 @@
     text-align: center;
   }
   &__add {
+    background-color: transparent;
     position: absolute;
     bottom: -0.6rem;
     left: 50%;
     transform: translateX(-50%);
-    color: var(--color-primary1);
+    color: var(--dark-gray2);
     border: none;
     cursor: pointer;
 
