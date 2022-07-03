@@ -3,6 +3,7 @@ import { useEffect } from "react";
 export default function useResizeTextArea(textAreaRef) {
 
   const handleTextAreaSize = () => {
+    if (textAreaRef.current === null) return;
     textAreaRef.current.style.height = 'inherit';
     const computed = window.getComputedStyle(textAreaRef.current);
     const height = parseInt(computed.getPropertyValue('border-top-width'), 10)
