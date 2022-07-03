@@ -1,6 +1,27 @@
 .wrapper {
+  position: relative;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  &:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10rem;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../todo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(50%);
+    z-index: -1;
+    opacity: 0.06;
+    transform: rotate(10deg)
+  }
 }
