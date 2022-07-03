@@ -1,3 +1,10 @@
 .main-content {
   margin-block: 2rem;
+  padding-block-start: 6rem;
+}
+
+@media screen and (max-width: 520px) {
+  .main-content {
+    padding-block-start: 4.5rem;
+  }
 }

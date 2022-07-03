@@ -1,6 +1,12 @@
 .main-header {
   background: linear-gradient(to bottom, var(--color-primary1), var(--color-primary2));
   padding-block: 1.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(black, 0.22);
 
   &__content {
     display: flex;
