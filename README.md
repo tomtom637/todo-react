@@ -4,9 +4,7 @@
 
 Here is a simple proof of concept for a todo application in ReactJs.
 
-A user can create lists of tasks, mark them as completed, update or delete them.
-
-The additional functionality of describing the urgency of each todo is in progress.
+A user can create lists of tasks, mark them as completed, update or delete them as well as describing their urgency with color tags.
 
 Although it doesn't have a backend nor a database, it uses the localStorage to persist the data.
 
