@@ -38,4 +38,23 @@
     border: none;
     color: var(--color-danger1);
   }
+
+  &__urgency {
+    margin-right: 0.6rem;
+    margin-left: -1.5rem;
+    border: none;
+    outline: none;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__low {
+    color: var(--color-green);
+  }
+  &__medium {
+    color: var(--color-yellow);
+  }
+  &__high {
+    color: var(--color-red);
+  }
 }

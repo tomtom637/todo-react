@@ -26,7 +26,17 @@ export default function TodoItem({ cardIndex, todoIndex }) {
 
   const setUrgency = (e) => {
     const newTodos = [...todos];
-    newTodos[cardIndex].todos[todoIndex].urgency = e.target.value;
+    switch (newTodos[cardIndex].todos[todoIndex].urgency) {
+      case 'low':
+        newTodos[cardIndex].todos[todoIndex].urgency = 'medium';
+        break;
+      case 'medium':
+        newTodos[cardIndex].todos[todoIndex].urgency = 'high';
+        break;
+      case 'high':
+        newTodos[cardIndex].todos[todoIndex].urgency = 'low';
+        break;
+    }
     setTodos(newTodos);
   };
 
@@ -46,6 +56,14 @@ export default function TodoItem({ cardIndex, todoIndex }) {
 
   return (
     <li className="todo">
+      {!currentTodo.completed && (
+        <button
+          className="todo__urgency"
+          onClick={() => setUrgency()}
+        >
+          <i className={`fa-solid fa-circle todo__${currentTodo.urgency}`}></i>
+        </button>
+      )}
       <input
         type="checkbox"
         checked={currentTodo.completed}
@@ -64,9 +82,9 @@ export default function TodoItem({ cardIndex, todoIndex }) {
         rows={1}
       />
       <Button
-          buttonColor='danger'
-          onClick={() => deleteTodo()}
-        >&#215;</Button>
+        buttonColor='danger'
+        onClick={() => deleteTodo()}
+      >&#215;</Button>
     </li>
   );
 }
