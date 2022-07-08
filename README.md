@@ -18,4 +18,24 @@ The technology used is as follows:
 * Jotai for the state management
 * Vite to create and compile the project effortlessly :)
 
+---
+
+## Run the project
+
+Clone the repository, then:
+
+```
+npm i
+```
+
+to install the dependencies.
+
+To start a development server, run:
+
+```
+npm run dev
+```
+
+A live version of this project can be found [here](https://tomtom637.github.io/todo-react/)
+
 
